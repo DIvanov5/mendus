@@ -1,12 +1,9 @@
 # Создание Landing Page на WordPress
 
-<<<<<<< HEAD
 ![Создание Landing Page на WordPress](https://raw.githubusercontent.com/agragregra/wordpress-landing-page-lesson/master/_mockup.jpg)
 
 <p>Бесплатный видеокурс по созданию одностраничного сайта на WordPress от А до Я.</p>
 
-=======
->>>>>>> d7668671d8e037173225b8c8c1b0dff81acaf3c8
 <p>Сайт проекта: <a href="http://webdesign-master.ru" target="_blank">webdesign-master.ru</a></p>
 <p>YouTube канал: <a href="http://www.youtube.com/user/agragregra" target="_blank">http://www.youtube.com/user/agragregra</a></p>
 

@@ -17,30 +17,22 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-<<<<<<< HEAD
 .h_title {
 		width: 390px;
 	}
 	.h_title h1{
 		font-size: 1.8em;
 	}
-=======
-
->>>>>>> d7668671d8e037173225b8c8c1b0dff81acaf3c8
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-<<<<<<< HEAD
 	.h_title {
 		width: 390px;
 	}
 	.h_title h1{
 		font-size: 1.5em;
 	}
-=======
-
->>>>>>> d7668671d8e037173225b8c8c1b0dff81acaf3c8
 }
 
 

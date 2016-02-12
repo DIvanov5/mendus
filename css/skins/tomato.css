@@ -18,7 +18,6 @@ p {
   border-color: #FF6347; }
 
 .main_color_bg {
-<<<<<<< HEAD
   background-color: #222;
   color: #888; }
 
@@ -51,21 +50,5 @@ svg path {
 
 section h2::after {
   background-color: #222; }
-=======
-  background-color: #222; }
-
-svg path {
-  fill: #222; }
-
-.toggle_mnu {
-  background-color: #222; }
-
-.top_mnu a {
-  color: #fff;
-  letter-spacing: 4px; }
-.top_mnu a:hover {
-  color: #FF6347;
-  background-color: rgba(255, 255, 255, 0.03); }
->>>>>>> d7668671d8e037173225b8c8c1b0dff81acaf3c8
 
 /*# sourceMappingURL=tomato.css.map */
