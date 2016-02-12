@@ -1,0 +1,221 @@
+@import "bourbon/bourbon"
+@import url(https://fonts.googleapis.com/css?family=Philosopher&subset=latin,cyrillic)
+
+body
+	font-family: "Raleway", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none
+	
+section
+	padding: 70px 0
+	h2
+		display: block                   
+		font-size: 1.71em
+		text-transform: uppercase
+		text-align: center
+		position: relative
+		margin-bottom: 130px 
+		&::after
+			content: ""
+			height: 1px
+			left: 50%
+			margin-left: -75px
+			margin-top: 65px
+
+			position: absolute
+			width: 150px
+
+.main_head
+	min-height: 620px
+	padding-top: 20px
+
+// jQuery Preloader
+
+.loader 
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner 
+		background-image: url("../img/preload.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute	
+
+// Logo
+
+.logo_container
+	float: left
+svg
+	height: 60px
+	width: 150px
+	z-index: 100
+	position: relative
+
+// Main title
+
+.h_title
+	position: relative
+	top: 350px
+	z-index: 10
+	padding: 0
+	width: 501px
+	margin: 0
+	h1
+	position: absolute
+	text-transform: uppercase
+	font-family: 'Philosopher', sans-serif
+	font-weight: bold
+	font-style: italic
+	font-size: 1.4em
+	text-shadow: 0 5px 7px rgba(217, 224, 249, 1)
+
+
+// Menu
+
+.toggle_mnu
+	width: 60px
+	height: 60px
+	position: fixed
+	z-index: 100
+	border: none
+	right: 20px
+	top: 20px
+	span
+		display: block
+
+$w: 34px
+$h: 3px	
+
+.sandwich 
+	width: $w
+	height: $w
+	position: absolute
+	top: 14px
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	z-index: 200
+
+.sw-topper
+	position: relative
+	top: 0
+	width: $w 
+	height: $h
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+
+// transition-delay: 0.2s, 0s;
+
+.sw-bottom
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 2.2
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s
+
+.sw-footer
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 4.5
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: all 0.5s
+	transition-delay: 0.1s
+
+.sandwich.active 
+	.sw-topper
+		top: 8px
+		transform: rotate(140deg)
+	.sw-bottom
+		top: 5px
+		transform: rotate(-140deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+
+.top_mnu
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,.8)
+	z-index: 50
+	left: 0
+	top: 0
+	display: none
+	ul,
+	li
+		list-style-type: none
+		padding: 0
+		margin: 0
+	ul
+		margin-top: 120px
+		text-align: center
+		a
+			display: block
+			text-transform: uppercase
+			font-size: 12px
+			opacity: 0
+			position: relative
+			height: 50px
+			span
+				display: block
+				position: relative
+				height: 100%
+				top: -36px
+				left: 0
+				+transition(all 0.5s ease)
+
+
+// On menu click change text opacity
+
+.h-opacify
+	opacity: .3
+	+transition(all .2s ease-in-out)
+
+// Footer
+
+.main_footer
+	padding: 50px 0
+	font-size: 0.93em
+	
+	
+	
+
