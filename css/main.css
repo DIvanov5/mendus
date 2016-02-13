@@ -21,21 +21,6 @@ body textarea:required:valid {
 
 section {
   padding: 70px 0; }
-  section h2 {
-    display: block;
-    font-size: 1.71em;
-    text-transform: uppercase;
-    text-align: center;
-    position: relative;
-    margin-bottom: 130px; }
-    section h2::after {
-      content: "";
-      height: 1px;
-      left: 50%;
-      margin-left: -75px;
-      margin-top: 65px;
-      position: absolute;
-      width: 150px; }
 
 .main_head {
   min-height: 620px;
@@ -225,5 +210,45 @@ svg {
 .main_footer {
   padding: 50px 0;
   font-size: 0.93em; }
+
+section h2 {
+  display: block;
+  font-size: 1.71em;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  margin-bottom: 130px; }
+  section h2::after {
+    content: "";
+    height: 1px;
+    left: 50%;
+    margin-left: -75px;
+    margin-top: 65px;
+    position: absolute;
+    width: 150px; }
+
+.s_about .person {
+  margin: 0 35px; }
+  .s_about .person img {
+    max-width: 530px;
+    border-radius: 10px; }
+.s_about ul,
+.s_about li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+.s_about li {
+  display: inline-block;
+  font-size: 1.3em;
+  padding: 0 3px; }
+
+.s_content .blockquote-reverse p {
+  font-style: italic;
+  font-size: 0.86em;
+  margin-bottom: 35px;
+  line-height: 1.7em; }
+.s_content p {
+  margin-bottom: 25px;
+  line-height: 2.5em; }
 
 /*# sourceMappingURL=main.css.map */

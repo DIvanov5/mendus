@@ -3,9 +3,15 @@
 $(document).ready(function() {
 
 // Main title animation
-	$(".h_title h1, svg path").animated("fadeInDown", "fadeOutUp");
-	$(".section_header").animated("fadeInUp", "fadeOutDown");
+	$(".h_title h1").animated("pulse");
 
+// Section title animation
+	$(".section_header").animated("swing");
+
+// Section content animation
+	
+	$(".animation_1").animated("zoomIn", "zoomOut");
+	
 	function heightDetect(){
 	$(".main_head").css("height", $(window).height());	
 	};
@@ -15,6 +21,10 @@ $(document).ready(function() {
 	});
 
 	});
+
+// Popup plagin
+
+	$(".popup").magnificPopup({type:"image"});
 
 // Preload function
 

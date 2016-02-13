@@ -51,4 +51,10 @@ svg path {
 section h2::after {
   background-color: #222; }
 
+.s_content p:first-child {
+  color: #222;
+  letter-spacing: 4px; }
+.s_content p {
+  letter-spacing: 2px; }
+
 /*# sourceMappingURL=tomato.css.map */

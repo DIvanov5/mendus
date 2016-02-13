@@ -20,9 +20,13 @@
 .h_title {
 		width: 390px;
 	}
-	.h_title h1{
+	.h_title h1 {
 		font-size: 2.5em;
 	}
+.person img {
+		height: 235px;
+    max-width: 235px;
+  }
 }
 
 /* Custom, iPhone Retina */
