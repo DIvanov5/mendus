@@ -3,14 +3,16 @@
 $(document).ready(function() {
 
 // Main title animation
-	$(".h_title h1").animated("pulse");
+	$(".h_title h1, svg path").animated("fadeIn", "fadeOut");
 
 // Section title animation
-	$(".section_header").animated("swing");
+	$(".section_header").animated("fadeInUp", "fadeOutUp");
 
 // Section content animation
 	
-	$(".animation_1").animated("zoomIn", "zoomOut");
+	$(".animation_1").animated("fadeInLeft", "fadeOutLeft");
+	$(".animation_2").animated("fadeInRight", "fadeOutRight");
+	$(".animation_3").animated("zoomIn", "zoomOut");
 	
 	function heightDetect(){
 	$(".main_head").css("height", $(window).height());	
@@ -18,8 +20,6 @@ $(document).ready(function() {
 	heightDetect()
 	$(window).resize(function(){
 		heightDetect();
-	});
-
 	});
 
 // Popup plagin
@@ -58,3 +58,4 @@ $(document).ready(function() {
 			$(".top_mnu li a").addClass("fadeInUp animated");
 		};
 	});
+});

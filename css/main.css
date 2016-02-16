@@ -6,7 +6,8 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.42857;
-  -webkit-font-smoothing: antialised; }
+  -webkit-font-smoothing: antialised;
+  overflow-x: hidden; }
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
@@ -21,6 +22,8 @@ body textarea:required:valid {
 
 section {
   padding: 70px 0; }
+  section .row {
+    margin-bottom: 45px; }
 
 .main_head {
   min-height: 620px;
