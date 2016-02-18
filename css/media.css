@@ -17,16 +17,69 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-.h_title {
+	/*Main title*/
+	.h_title {
 		width: 390px;
 	}
 	.h_title h1 {
 		font-size: 2.5em;
 	}
-.person img {
+
+	/*About section*/
+	.person img {
 		height: 235px;
     max-width: 235px;
   }
+
+  /*Media section*/
+	.s_media .left {
+		border: none;
+	}
+	.s_media .left h3 {
+		text-align: left;
+	}
+	.s_media .left a {
+		margin-bottom: 15px;
+	}
+	.s_media .right a {
+		margin-top: 0;
+	}
+
+	/*Menu button*/
+	.toggle_mnu {
+		width: 30px;
+		height: 30px;
+	}
+	.sandwich {
+		height: 20px;
+		width: 20px;
+		top: 4px;
+	}
+	.sandwich span {
+		height: 3px;
+		width: 20px;
+	}
+	.sandwich .sw-bottom{
+		top: 3.6px;
+	}
+	.sandwich .sw-footer{
+		top: 7.5px;
+	}
+
+	/*Logo*/
+	.logo_container svg {
+		height: 30px;
+	}
+
+	/*Footer */
+	.main_footer .social_wrap {
+		float: left;
+		margin-top: 15px;
+		width: 100%
+	}
+	.main_footer .social_wrap ul {
+		padding-left: 0;
+	}
 }
 
 /* Custom, iPhone Retina */

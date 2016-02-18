@@ -56,4 +56,11 @@ section h2::after {
 .s_content p {
   letter-spacing: 2px; }
 
+.s_media h3 {
+  letter-spacing: 2px; }
+.s_media .left {
+  border-right: 1px solid #FFF; }
+.s_media a {
+  border: 1px solid #FF6347; }
+
 /*# sourceMappingURL=tomato.css.map */
