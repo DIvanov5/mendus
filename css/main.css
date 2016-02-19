@@ -9,14 +9,6 @@ body {
   -webkit-font-smoothing: antialised;
   overflow-x: hidden; }
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-  color: red; }
-
-body input:required:valid,
-body textarea:required:valid {
-  color: green; }
-
 .hidden {
   display: none; }
 
@@ -68,19 +60,17 @@ svg {
 
 .h_title {
   position: relative;
-  top: 350px;
+  top: 750px;
   z-index: 10;
   padding: 0;
-  width: 501px;
+  width: 700px;
   margin: 0;
-  z-index: 100; }
+  z-index: 100;
+  margin-left: -255px; }
   .h_title h1 {
     position: absolute;
-    text-transform: uppercase;
-    font-family: "Philosopher", sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 2.8em;
+    font-family: "Venecia", sans-serif;
+    font-size: 3.5em;
     -webkit-animation-delay: 1s;
     -moz-animation-delay: 1s;
     animation-delay: 1s; }
@@ -264,26 +254,64 @@ section h2 {
   margin-bottom: 25px;
   line-height: 2.5em; }
 
-.s_media .left {
-  text-align: right; }
-  .s_media .left h3 {
-    text-align: right;
+.s_media {
+  background-color: #FCF7FA; }
+  .s_media .left {
+    text-align: right; }
+    .s_media .left h3 {
+      text-align: right;
+      margin-bottom: 40px; }
+  .s_media .right h3 {
+    text-align: left;
     margin-bottom: 40px; }
-.s_media .right h3 {
-  text-align: left;
+  .s_media iframe {
+    margin-bottom: 25px; }
+  .s_media h3 {
+    font-size: 1.14em;
+    text-transform: uppercase;
+    margin-top: 25px; }
+  .s_media a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 800;
+    margin-top: 30px;
+    background-color: #fff;
+    color: #222; }
+    .s_media a:hover {
+      background-color: #FAFAFA; }
+
+.contact_box {
   margin-bottom: 40px; }
-.s_media iframe {
-  margin-bottom: 25px; }
-.s_media h3 {
-  font-size: 1.14em;
+  .contact_box h3 {
+    text-align: left;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 5px; }
+  .contact_box .contacts_icon {
+    font-size: 2.14em; }
+  .contact_box p {
+    margin-bottom: 5px; }
+
+.main_form .form-group {
+  display: block;
+  margin-bottom: 20px; }
+  .main_form .form-group input,
+  .main_form .form-group textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    line-height: 40px;
+    text-indent: 12px;
+    font-size: 0.86em; }
+.main_form button {
+  border: none;
+  line-height: 40px;
+  padding: 0 25px;
   text-transform: uppercase;
-  margin-top: 25px; }
-.s_media a {
-  display: inline-block;
-  padding: 10px 20px;
-  font-weight: 800;
-  margin-top: 30px; }
-  .s_media a:hover {
-    background-color: #333; }
+  font-weight: 600;
+  font-size: 0.93em;
+  margin-top: 10px;
+  float: right; }
 
 /*# sourceMappingURL=main.css.map */

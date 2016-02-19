@@ -37,9 +37,6 @@ p
 .bg_dark
 	background-color: $dark
 	color: $light_text_color
-	h2
-		&::after
-			background-color: $light_text_color
 
 // Logo
 
@@ -85,10 +82,36 @@ section
 
 // Media section
 
-.s_media	
+.s_media
+	color: $main_color
+	h2 
+		&::after
+			background-color: $main_color
 	h3
 		+kerning(2)
 	.left
-		border-right: 1px solid $light_text_color
+		border-right: 1px solid $main_color
 	a
-		border: 1px solid $color
+		border: 1px solid $text_color
+		&:hover
+			color: $color
+
+.contacts_icon
+	color: $color
+
+.text-danger
+	color: $color
+
+.main_form
+	.form-group
+		+kerning(2)
+		color: $text_color
+		input:focus,
+		textarea:focus
+			color: $color
+			border: 1px solid $color
+			+kerning(2)
+	button 
+		background-color: $color
+		color: $light_text_color
+		+kerning(2)

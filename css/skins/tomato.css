@@ -26,8 +26,6 @@ p {
 .bg_dark {
   background-color: #000;
   color: #FFF; }
-  .bg_dark h2::after {
-    background-color: #FFF; }
 
 svg path {
   fill: #FAFAFA; }
@@ -56,11 +54,36 @@ section h2::after {
 .s_content p {
   letter-spacing: 2px; }
 
-.s_media h3 {
+.s_media {
+  color: #222; }
+  .s_media h2::after {
+    background-color: #222; }
+  .s_media h3 {
+    letter-spacing: 2px; }
+  .s_media .left {
+    border-right: 1px solid #222; }
+  .s_media a {
+    border: 1px solid #888; }
+    .s_media a:hover {
+      color: #FF6347; }
+
+.contacts_icon {
+  color: #FF6347; }
+
+.text-danger {
+  color: #FF6347; }
+
+.main_form .form-group {
+  letter-spacing: 2px;
+  color: #888; }
+  .main_form .form-group input:focus,
+  .main_form .form-group textarea:focus {
+    color: #FF6347;
+    border: 1px solid #FF6347;
+    letter-spacing: 2px; }
+.main_form button {
+  background-color: #FF6347;
+  color: #FFF;
   letter-spacing: 2px; }
-.s_media .left {
-  border-right: 1px solid #FFF; }
-.s_media a {
-  border: 1px solid #FF6347; }
 
 /*# sourceMappingURL=tomato.css.map */

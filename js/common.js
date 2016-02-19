@@ -3,7 +3,7 @@
 $(document).ready(function() {
 
 // Main title animation
-	$(".h_title h1, svg path").animated("fadeIn", "fadeOut");
+	$("svg path").animated("fadeIn", "fadeOut");
 
 // Section title animation
 	$(".section_header").animated("fadeInUp", "fadeOutUp");
@@ -22,9 +22,17 @@ $(document).ready(function() {
 		heightDetect();
 	});
 
+
 // Popup plagin
 
 	$(".popup").magnificPopup({type:"image"});
+
+// jqBootstrapValidation
+
+	$("input,select,textarea").jqBootstrapValidation();
+
+// PageScroll
+	$(".top_mnu ul li a").mPageScroll2id();
 
 // Preload function
 
@@ -44,12 +52,13 @@ $(document).ready(function() {
 	$(".top_mnu ul a").click(function() {
 		$(".top_mnu").fadeOut(600);
 		$(".sandwich").toggleClass("active");
+		$(".h_title, svg").removeClass("h-opacify");
 	}).append("<span>");
 
 	$(".toggle_mnu").click(function() {
 		if ($(".top_mnu").is(":visible")) {
 			$(".h_title, svg").removeClass("h-opacify"); //On menu click, change text opacity
-			$(".top_mnu").fadeOut(600); // Show menu
+			$(".top_mnu").fadeOut(600); // Hide menu
 			$(".top_mnu li a").removeClass("fadeInUp animated");
 	}
 		else {
