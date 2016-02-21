@@ -19,4 +19,28 @@
   font-weight: 600;
   src: url("../fonts/RalewaySemiBold/RalewaySemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewaySemiBold/RalewaySemiBold.woff") format("woff"), url("../fonts/RalewaySemiBold/RalewaySemiBold.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "RupsterScriptFree";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RupsterScriptFree/RupsterScriptFree.eot?#iefix") format("embedded-opentype"), url("../fonts/RupsterScriptFree/RupsterScriptFree.woff") format("woff"), url("../fonts/RupsterScriptFree/RupsterScriptFree.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Venecia";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Venecia/Venecia.eot?#iefix") format("embedded-opentype"), url("../fonts/Venecia/Venecia.woff") format("woff"), url("../fonts/Venecia/Venecia.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Vivaldiscript";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Vivaldiscript/Vivaldiscript.eot?#iefix") format("embedded-opentype"), url("../fonts/Vivaldiscript/Vivaldiscript.woff") format("woff"), url("../fonts/Vivaldiscript/Vivaldiscript.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "NautilusPompilius";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/NautilusPompilius/NautilusPompilius.eot?#iefix") format("embedded-opentype"), url("../fonts/NautilusPompilius/NautilusPompilius.woff") format("woff"), url("../fonts/NautilusPompilius/NautilusPompilius.ttf") format("truetype"); }
+
 /*# sourceMappingURL=fonts.css.map */
