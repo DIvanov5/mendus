@@ -1,11 +1,13 @@
 @import "../bourbon/bourbon"
 
-$color: #FF6347 //Theme skin
+$color: #CF8884//Theme skin FF6347
 $text_color: #888
 $light_text_color: #FFF
 $main_color: #222
 $dark: #000
 $bg_light: #FAFAFA
+$bg_gallery_cont: #FCF7FA
+$bg_gallery: #DED9BF
 
 
 @mixin kerning($kerning)
@@ -36,6 +38,10 @@ p
 
 .bg_dark
 	background-color: $dark
+	color: $light_text_color
+
+.bg_gallery
+	background-color: $bg_gallery
 	color: $light_text_color
 
 // Logo
@@ -115,3 +121,26 @@ section
 		background-color: $color
 		color: $light_text_color
 		+kerning(2)
+
+// Gallery
+
+.s_gallery
+	a
+		color: $text_color
+		+kerning(2)
+		&:hover
+			color: $color
+			text-decoration: underline
+
+.full_gallery
+	background: $bg_gallery_cont
+
+
+
+// Contacts
+
+.contact_box
+	a
+		color: $text_color
+		&:hover
+			color: $color
