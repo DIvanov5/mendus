@@ -2,25 +2,45 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	.h_title {
+		top: 425px;
+		margin: 0;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.s_gallery .g_item a:nth-child(odd),
+	.full_gallery .g_item a:nth-child(odd),
+	.s_gallery a {
+		margin-left: 80px;
+	}
 
+	.h_title {
+		top: 1000px;
+		margin-left: -20px;
+		
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
+	.h_title {
+			top: 800px;
+			margin-left: 0;
+			
+		}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	/*Main title*/
 	.h_title {
-		width: 390px;
-	}
+		width: 360px;
+		top: 450px;
+
+	}	
 	.h_title h1 {
 		font-size: 2.5em;
 	}
@@ -80,17 +100,31 @@
 	.main_footer .social_wrap ul {
 		padding-left: 0;
 	}
+
+	/*Media*/
+	.s_gallery .g_item a:nth-child(2n+1),
+	.full_gallery .g_item a:nth-child(2n+1),
+	.s_gallery .g_item a,
+	.s_gallery a {
+		margin-left: 30px
+	}
+
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-	.h_title {
-		width: 390px;
-		top: 250px
-	}
+	
 	.h_title h1{
 		font-size: 2.2em;
 	}
+	.s_gallery .g_item a:nth-child(2n+1),
+	.full_gallery .g_item a:nth-child(2n+1),
+	.s_gallery .g_item a,
+	.full_gallery .g_item a,
+	.s_gallery a {
+		margin-left: 15px
+	}
+
 }
 
 

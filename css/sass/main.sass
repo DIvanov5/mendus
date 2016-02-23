@@ -11,12 +11,12 @@ body
 	-webkit-font-smoothing: antialised
 	overflow-x: hidden
 
-// body input:focus:required:invalid,
-// body textarea:focus:required:invalid
-// 	color: red
-// body input:required:valid,
-// body textarea:required:valid
-// 	color: green
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
 
 .hidden
 	display: none
@@ -71,13 +71,13 @@ svg
 
 .h_title
 	position: relative
-	top: 750px
+	top: 450px
 	z-index: 10
 	padding: 0
 	width: 700px
 	margin: 0
 	z-index: 100
-	margin-left: -255px
+	margin-left: -50px
 	h1
 		position: absolute
 		font-family: 'Venecia', sans-serif
@@ -208,23 +208,6 @@ $h: 3px
 .h-opacify
 	opacity: 0.1
 	+transition(all .2s ease-in-out)
-
-// Footer
-
-.main_footer
-	padding: 50px 0
-	font-size: 0.93em
-	.social_wrap
-		list-style: none
-		float: right
-		font-size: 1.29em
-		line-height: 0
-		ul
-			margin: 0
-			li
-				display: inline-block
-				padding-left: 5px
-
 	
 section
 	h2
@@ -249,10 +232,12 @@ section
 .s_about
 	.person
 		margin: 0 35px
-		img
-			max-width: 530px
-			border-radius: 10px
-	ul,
+		a
+			cursor: zoom-in
+			img
+				max-width: 530px
+				border-radius: 10px
+		ul,
 	li
 		margin: 0
 		padding: 0
@@ -276,7 +261,6 @@ section
 // Media
 
 .s_media
-	background-color: #FCF7FA
 	.left
 		text-align: right
 		h3
@@ -287,7 +271,14 @@ section
 			text-align: left 
 			margin-bottom: 40px
 	iframe
+		width: 100%
+		overflow: hidden
 		margin-bottom: 25px
+		border: 0
+		video:-webkit-full-screen
+			max-height: 100%
+		video:-moz-full-screen
+			max-height: 100%
 	h3
 		font-size: 1.14em
 		text-transform: uppercase
@@ -302,6 +293,47 @@ section
 		&:hover
 			background-color: #FAFAFA
 
+// Gallery
+.s_gallery
+	.g_item
+		a
+			margin-left: 30px
+			cursor: zoom-in
+			&:first-child
+				margin-left: 0
+			img
+				width: 258px
+				height: 258px
+				margin-bottom: 30px
+	a
+		font-size: 0.93em
+		font-weight: 600
+
+.mfp-title
+	display: none
+	
+.mfp-counter
+	right: 50%
+
+.g_main_header
+	padding-top: 20px
+	background-color: #DED9BF
+
+.full_gallery
+	.g_item
+		a
+			margin-left: 30px
+			cursor: zoom-in
+			&:nth-child(4n+1)
+				margin-left: 0
+			img
+				width: 258px
+				height: 258px
+				margin-bottom: 30px
+
+
+
+	
 // Contacts
 
 .contact_box
@@ -338,3 +370,22 @@ section
 		font-size: 0.93em
 		margin-top: 10px
 		float: right
+
+// Footer
+
+.main_footer
+	padding: 50px 0
+	font-size: 0.93em
+	.social_wrap
+		list-style: none
+		float: right
+		font-size: 1.29em
+		line-height: 0
+		ul
+			margin: 0
+			li
+				display: inline-block
+				padding-left: 5px
+				a
+				color: #CF8884
+

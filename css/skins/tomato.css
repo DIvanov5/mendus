@@ -3,19 +3,19 @@ body {
   letter-spacing: 1px; }
 
 a {
-  color: #FF6347; }
+  color: #CF8884; }
 
 p {
   color: #888; }
 
 .color_element {
-  color: #FF6347; }
+  color: #CF8884; }
 
 .color_bg {
-  background-color: #FF6347; }
+  background-color: #CF8884; }
 
 .color_border {
-  border-color: #FF6347; }
+  border-color: #CF8884; }
 
 .main_color_bg {
   color: #888; }
@@ -25,6 +25,10 @@ p {
 
 .bg_dark {
   background-color: #000;
+  color: #FFF; }
+
+.bg_gallery {
+  background-color: #DED9BF;
   color: #FFF; }
 
 svg path {
@@ -41,7 +45,7 @@ svg path {
   color: #FFF;
   letter-spacing: 4px; }
   .top_mnu a:hover {
-    color: #FF6347; }
+    color: #CF8884; }
     .top_mnu a:hover span:hover {
       background-color: rgba(255, 255, 255, 0.03); }
 
@@ -65,25 +69,40 @@ section h2::after {
   .s_media a {
     border: 1px solid #888; }
     .s_media a:hover {
-      color: #FF6347; }
+      color: #CF8884; }
 
 .contacts_icon {
-  color: #FF6347; }
+  color: #CF8884; }
 
 .text-danger {
-  color: #FF6347; }
+  color: #CF8884; }
 
 .main_form .form-group {
   letter-spacing: 2px;
   color: #888; }
   .main_form .form-group input:focus,
   .main_form .form-group textarea:focus {
-    color: #FF6347;
-    border: 1px solid #FF6347;
+    color: #CF8884;
+    border: 1px solid #CF8884;
     letter-spacing: 2px; }
 .main_form button {
-  background-color: #FF6347;
+  background-color: #CF8884;
   color: #FFF;
   letter-spacing: 2px; }
+
+.s_gallery a {
+  color: #888;
+  letter-spacing: 2px; }
+  .s_gallery a:hover {
+    color: #CF8884;
+    text-decoration: underline; }
+
+.full_gallery {
+  background: #FCF7FA; }
+
+.contact_box a {
+  color: #888; }
+  .contact_box a:hover {
+    color: #CF8884; }
 
 /*# sourceMappingURL=tomato.css.map */
